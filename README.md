@@ -1,66 +1,52 @@
-# ![alt text](https://assets.breatheco.de/apis/img/images.php?blob&random&cat=icon&tags=breathecode,32)  The Excuse Generator
+# Hello World with Vanilla JS
 
-Disneyland for procrastinators and lazy people. 
+Start coding in 30 seconds by opening this template in gitpod:
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/4GeeksAcademy/vanillajs-hello.git)
 
-This project is ideal for avoiding someone annoying, it takes no more than 20 lines of code and it can save you for the rest of your life!
+### Manual Installation
 
-## The Goal
-
-We wanted a project that uses very little Javascript but still with a very fun application. The excuse generator takes
-20 lines of code, is super simple to understand and is the perfect first project for any beginner developer.
-
-## Instructions
-
-Please create a small website that generates an excuse each time a button is pressed, it has to look like this: [Checkout the demo animation](https://github.com/breatheco-de/tutorial-project-excuse-generator-javascript/blob/master/preview.gif?raw=true).
-
-## Discuss with your classmates the strategy first
-
-How can we generate an excuse? How are sentences build?
-
-![Excuse generator explanation](https://github.com/breatheco-de/tutorial-project-excuse-generator-javascript/blob/master/explanation.gif?raw=true)
-
-The idea is to generate each part of the sentence randomly to come up with great excuses!
-
-## 🌱  How to start this project
-
-Do not clone this repository.
-
-The first step to start coding is cloning the [vanillajs boilerplate](https://github.com/4GeeksAcademy/vanillajs-hello) on your local computer or gitpod.
-
-a) If using Gitpod (recommended) you can clone the boilerplate by [clicking here](https://github.com/4GeeksAcademy/vanillajs-hello).  
-b) If working locally type the following command from your command line: `git clone https://github.com/4GeeksAcademy/vanillajs-hello`.  
-
-💡 Important: Remember to create a new repository, update the remote (`git remote set-url origin <your new url>`), and upload the code to your new repository using `add`, `commit` and `push`.
-
-## Hint
-
-1. Update your index.html with one excuse hard-coded, no js, just one excuse in pure plain HTML.
-2. The excuse must be inside an HTML tag that has an id assinged, for example:
-```html
-  <p id="excuse">My dog ate my homework</p>
+1) Remember to install the npm packages first:
 ```
-3. Using javascript, create a function that generates and returns a random excuse with the following structure:
-```js
-let who = ['The dog','My grandma','His turtle','My bird'];
-let action = ['ate','peed','crushed','broke'];
-let what = ['my homework', 'the keys', 'the car'];
-let when = ['before the class','right on time','when I finished','during my lunch','while I was praying'];
+$ npm install
 ```
-4. To create a consistent excuse you have to concatenate one item from each array in the proper order.
-5. Call that function onLoad and set the excuse into the innerHTML of the #excuse HTML element.
 
+2) Build and Start coding!
 
-## Technologies
+Build the application for the first time...
 
-HTML, CSS3, Javascript, Webpack.
+```
+$ npm run start
+```
 
-## Fundamentals
+And start coding your Vanilla.js application, update the `src/index.html`, `src/index.css` or `src/app.js` depending on your needs.
 
-This exercise covers the following fundamentals:
+## FAQ
 
-1. Using external Javascript files in your project.
-2. How to work with Arrays.
-3. Generating random numbers.
-4. Concatenating strings.
-5. Using functions (at least a bit).
-6. Working with events (at least a bit).
+#### 1) How do I run my code?
+
+- Type on the command line `$ npm run start` and type localhost on the browser.
+
+#### 2) Where do I write my code?
+It depends on the language, but you have `./src/js/app.js`, `./src/style/index.css` and `./isrc/index.html` respectively, you can add new `.html` as you please, just make sure to include import it on the index.js.
+
+__Note:__ remember that the JS workflow starts inside `window.onload`.
+
+#### 3) I don't see my changes.
+
+Everytime you change any file inside the `./src` folder the website public URL will automatically refresh the changes (it's a process called hot deploy)
+Remember also to refresh cleaning the cache (command+shift+r on mac, control+shift+r on pc & linux)
+
+#### 4) How do I include more images on my project?
+Add them inside the `./src/assets/img` folder and import them from any of your JS files. E.g: `import "../assets/img/rigo-baby.jpg";`
+
+#### 5) How do I include more JS files?
+Just add the files into the JS folder and import the file/variables into your index.js. E.g: `import myVar from "./file2.js"`
+
+#### 6) How do I publish the website?
+
+This boilerplate is 100% compatible with the free github pages hosting. Publish your website by running:
+```sh
+$ npm run deploy
+```
+
+Very easy and in just one step!  Push to your __master__ branch and use the free hosting that comes with [GitHub pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/#enabling-github-pages-to-publish-your-site-from-master-or-gh-pages), the project is ready to be published. Remember to choose to run the Github Page from your master branch.
