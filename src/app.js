@@ -11,6 +11,7 @@ window.onload = function() {
   });
 };
 
+
 let generateExcuse = () => {
   let pronoun = ["A", "The"];
   let subject = ["jogger", "racon", "dog", "driver", "comedian"];
